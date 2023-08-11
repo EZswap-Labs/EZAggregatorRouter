@@ -1,0 +1,53 @@
+{
+    "steps": [
+        {
+            "id": "currency-approval",
+            "action": "Approve exchange contract",
+            "description": "A one-time setup transaction to enable trading",
+            "kind": "transaction",
+            "items": [
+                {
+                    "status": "incomplete",
+                    "data": {
+                        "from": "0x59e0b0c67a8f14be8c5855c95cdd2ba95a7f2bbb",
+                        "to": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+                        "data": "0x095ea7b30000000000000000000000001e0049783f008a0085193e00003d00cd54003c71ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "permit",
+            "action": "Sign permits",
+            "description": "Sign permits for accessing the tokens in your wallet",
+            "kind": "signature",
+            "items": []
+        },
+        {
+            "id": "sale",
+            "action": "Confirm transaction in your wallet",
+            "description": "To purchase this item you must confirm the transaction and pay the gas fee",
+            "kind": "transaction",
+            "items": [
+                {
+                    "status": "incomplete",
+                    "orderIds": [
+                        "0x2a128e01ff65259db6ac21386fc0301dbfb0ed5a1ad83b04a80b0099f350cb29"
+                    ]
+                }
+            ]
+        }
+    ],
+    "path": [
+        {
+            "orderId": "0x2a128e01ff65259db6ac21386fc0301dbfb0ed5a1ad83b04a80b0099f350cb29",
+            "contract": "0x5c76677fea2bf5dd37e4f1460968a23a537e3ee3",
+            "tokenId": "0",
+            "quantity": 1,
+            "source": "opensea.io",
+            "currency": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+            "quote": 6.49,
+            "rawQuote": "6490000"
+        }
+    ]
+}
